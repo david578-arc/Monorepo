@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .dark {
+    color-scheme: dark;
+  }
+  .dark body {
+    @apply bg-gray-900 text-gray-100;
+  }
+  .dark .bg-white {
+    @apply bg-gray-800 !important;
+  }
+  .dark .bg-gray-50 {
+    @apply bg-gray-900 !important;
+  }
+  .dark .bg-gray-100 {
+    @apply bg-gray-800 !important;
+  }
+  .dark .text-gray-900 {
+    @apply text-gray-100 !important;
+  }
+  .dark .text-gray-600 {
+    @apply text-gray-400 !important;
+  }
+  .dark .text-gray-700 {
+    @apply text-gray-300 !important;
+  }
+  .dark .text-gray-500 {
+    @apply text-gray-400 !important;
+  }
+  .dark .border-gray-200 {
+    @apply border-gray-700 !important;
+  }
+  .dark .border-gray-300 {
+    @apply border-gray-600 !important;
+  }
+  .dark .hover\:bg-gray-50:hover {
+    @apply bg-gray-700 !important;
+  }
+  .dark button {
+    @apply border-gray-600;
+  }
+  .dark input, .dark select, .dark textarea {
+    @apply bg-gray-700 border-gray-600 text-gray-100;
+  }
+  .dark .bg-blue-50 {
+    @apply bg-blue-900 !important;
+  }
+  .dark .text-blue-700 {
+    @apply text-blue-300 !important;
+  }
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 221.2 83.2% 53.3%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 221.2 83.2% 53.3%;
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-gray-50 text-gray-900 font-sans;
+  }
+}
+
+@layer components {
+  .flowbite-card {
+    @apply bg-white border border-gray-200 rounded-lg shadow-sm;
+  }
+  
+  .flowbite-button-primary {
+    @apply bg-blue-600 hover:bg-blue-700 text-white font-medium px-4 py-2 rounded-lg transition-colors;
+  }
+  
+  .flowbite-button-secondary {
+    @apply bg-white hover:bg-gray-50 text-gray-700 font-medium px-4 py-2 rounded-lg border border-gray-300 transition-colors;
+  }
+}
